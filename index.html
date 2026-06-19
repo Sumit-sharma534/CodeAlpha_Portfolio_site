@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sumit Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav__logo">SS<span class="dot">.</span></div>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#about"    onclick="closeMobile()">About</a></li>
+      <li><a href="#skills"   onclick="closeMobile()">Skills</a></li>
+      <li><a href="#projects" onclick="closeMobile()">Projects</a></li>
+      <li><a href="#resume"   onclick="closeMobile()">Resume</a></li>
+      <li><a href="#contact"  onclick="closeMobile()">Contact</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <div class="blob blob1"></div>
+      <div class="blob blob2"></div>
+      <div class="grid-lines"></div>
+    </div>
+    <div class="hero__content">
+      <p class="hero__eyebrow" id="typeText">Hello, I'm</p>
+      <h1 class="hero__name reveal" id="draggableName">
+        <span id="autoTypeName"></span><span class="cursor-blink">|</span>
+      </h1>
+      <p class="hero__sub">CSE Student &nbsp;·&nbsp; Polytechnic &nbsp;·&nbsp; Ambedkeshwar Group of Institutions</p>
+      <div class="hero__tags">
+        <span>Web Dev</span>
+        <span>Problem Solver</span>
+        <span>Tech Enthusiast</span>
+      </div>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View Projects</a>
+        <a href="#contact"  class="btn btn--outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="hero__code">
+      <div class="code-card">
+        <div class="code-card__dots"><span></span><span></span><span></span></div>
+        <pre><code><span class="kw">const</span> sumit = {
+  <span class="key">name</span>: <span class="str">"Sumit Sharma"</span>,
+  <span class="key">course</span>: <span class="str">"Polytechnic CSE"</span>,
+  <span class="key">college</span>: <span class="str">"AGI"</span>,
+  <span class="key">passion</span>: [
+    <span class="str">"coding"</span>,
+    <span class="str">"building"</span>,
+    <span class="str">"learning"</span>
+  ],
+  <span class="key">status</span>: <span class="str">"open to work 🚀"</span>
+};</code></pre>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <div class="scroll-down__arrow"></div>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <p class="section__eyebrow reveal">Who I Am</p>
+      <h2 class="section__title reveal">About Me</h2>
+      <div class="about__grid">
+        <div class="about__text reveal">
+          <p>I'm <strong>Sumit Sharma</strong>, a passionate Computer Science student pursuing Polytechnic from <strong>Ambedkeshwar Group of Institutions</strong>. I love turning ideas into real, working projects using code.</p>
+          <p>From building calculators to designing full portfolio sites, I'm always learning something new. My focus is on writing clean, readable code and creating user-friendly interfaces.</p>
+          <p>Currently on the lookout for internship opportunities where I can grow, contribute, and make an impact.</p>
+          <div class="about__facts">
+            <div class="fact"><span class="fact__num">2+</span><span class="fact__label">Years Coding</span></div>
+            <div class="fact"><span class="fact__num">5+</span><span class="fact__label">Projects Built</span></div>
+            <div class="fact"><span class="fact__num">CSE</span><span class="fact__label">Department</span></div>
+          </div>
+        </div>
+        <div class="about__avatar reveal">
+          <div class="avatar-box">
+            <div class="avatar-initials">SS</div>
+            <div class="avatar-ring"></div>
+            <div class="avatar-ring ring2"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="container">
+      <p class="section__eyebrow reveal">What I Know</p>
+      <h2 class="section__title reveal">Skills</h2>
+      <div class="skills__grid">
+        <div class="skill-card reveal"><div class="skill-card__icon">🌐</div><h3>Frontend</h3><ul><li>HTML5 &amp; CSS3</li><li>JavaScript (ES6+)</li><li>Responsive Design</li><li>CSS Animations</li></ul></div>
+        <div class="skill-card reveal"><div class="skill-card__icon">⚙️</div><h3>Programming</h3><ul><li>C / C++</li><li>Python (basics)</li><li>Data Structures</li><li>OOP Concepts</li></ul></div>
+        <div class="skill-card reveal"><div class="skill-card__icon">🛠️</div><h3>Tools</h3><ul><li>VS Code</li><li>Git &amp; GitHub</li><li>Chrome DevTools</li><li>Figma (basics)</li></ul></div>
+        <div class="skill-card reveal"><div class="skill-card__icon">📚</div><h3>Learning</h3><ul><li>React.js</li><li>Node.js</li><li>SQL / Databases</li><li>DSA</li></ul></div>
+      </div>
+      <div class="progress-section reveal">
+        <div class="progress-item"><div class="progress-label"><span>HTML &amp; CSS</span><span>85%</span></div><div class="progress-bar"><div class="progress-fill" data-w="85"></div></div></div>
+        <div class="progress-item"><div class="progress-label"><span>JavaScript</span><span>70%</span></div><div class="progress-bar"><div class="progress-fill" data-w="70"></div></div></div>
+        <div class="progress-item"><div class="progress-label"><span>C / C++</span><span>75%</span></div><div class="progress-bar"><div class="progress-fill" data-w="75"></div></div></div>
+        <div class="progress-item"><div class="progress-label"><span>Python</span><span>55%</span></div><div class="progress-bar"><div class="progress-fill" data-w="55"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="container">
+      <p class="section__eyebrow reveal">What I've Built</p>
+      <h2 class="section__title reveal">Projects</h2>
+      <div class="projects__grid">
+        <div class="project-card reveal">
+          <div class="project-card__top"><span class="project-tag">HTML · CSS · JS</span><div class="project-links"><a href="#" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div></div>
+          <h3>🖩 Calculator App</h3>
+          <p>Fully functional calculator with all arithmetic operations, backspace, keyboard support and animations.</p>
+          <div class="project-card__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-card__top"><span class="project-tag">HTML · CSS · JS</span><div class="project-links"><a href="#" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div></div>
+          <h3>🌐 Portfolio Website</h3>
+          <p>Personal portfolio site with smooth scroll, animations, responsive layout and sections for skills, projects and contact.</p>
+          <div class="project-card__tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-card__top"><span class="project-tag">C++</span><div class="project-links"><a href="#" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div></div>
+          <h3>📦 Student Management System</h3>
+          <p>A C++ console app to manage student records — add, search, update and delete using file handling and OOP.</p>
+          <div class="project-card__tags"><span>C++</span><span>OOP</span><span>File I/O</span></div>
+        </div>
+        <div class="project-card reveal">
+          <div class="project-card__top"><span class="project-tag">Python</span><div class="project-links"><a href="#" title="GitHub"><svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg></a></div></div>
+          <h3>🐍 Number Guessing Game</h3>
+          <p>Interactive Python game with difficulty levels, hints, score tracking and replay feature.</p>
+          <div class="project-card__tags"><span>Python</span><span>Logic</span><span>CLI</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME -->
+  <section class="section section--alt" id="resume">
+    <div class="container">
+      <p class="section__eyebrow reveal">My Journey</p>
+      <h2 class="section__title reveal">Resume</h2>
+      <div class="resume__grid">
+        <div class="resume__col reveal">
+          <h3 class="resume__col-title">🎓 Education</h3>
+          <div class="timeline">
+            <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><span class="timeline__year">2023 – Present</span><h4>Diploma in CSE</h4><p>Ambedkeshwar Group of Institutions</p><p class="timeline__note">Polytechnic · Computer Science &amp; Engineering</p></div></div>
+            <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><span class="timeline__year">2022 – 2023</span><h4>High School (10th)</h4><p>UP Board</p><p class="timeline__note">Science · Mathematics</p></div></div>
+          </div>
+        </div>
+        <div class="resume__col reveal">
+          <h3 class="resume__col-title">💼 Experience</h3>
+          <div class="timeline">
+            <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><span class="timeline__year">2025 – Present</span><h4>Web Development Intern</h4><p>Internship Program</p><p class="timeline__note">Building real-world HTML, CSS &amp; JS projects</p></div></div>
+            <div class="timeline__item"><div class="timeline__dot"></div><div class="timeline__content"><span class="timeline__year">2024</span><h4>College Tech Fest</h4><p>Ambedkeshwar Group of Institutions</p><p class="timeline__note">Participated in coding competitions</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="resume__download reveal"><a href="#" class="btn btn--primary">⬇ Download Resume</a></div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="container">
+      <p class="section__eyebrow reveal">Get In Touch</p>
+      <h2 class="section__title reveal">Contact Me</h2>
+      <p class="contact__sub reveal">I'm currently open to internship opportunities. Feel free to reach out!</p>
+      <div class="contact__grid">
+        <div class="contact__info reveal">
+          <div class="contact__item"><span class="contact__icon">📧</span><div><p class="contact__label">Email</p><a href="mailto:sumitsharma@email.com">sumitsharma@email.com</a></div></div>
+          <div class="contact__item"><span class="contact__icon">📍</span><div><p class="contact__label">Location</p><p>Uttar Pradesh, India</p></div></div>
+          <div class="contact__item"><span class="contact__icon">🏫</span><div><p class="contact__label">College</p><p>Ambedkeshwar Group of Institutions</p></div></div>
+          <div class="contact__socials">
+            <a href="#" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="#" class="social-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <form class="contact__form reveal" id="contactForm">
+          <div class="form-group"><label for="fname">Name</label><input type="text" id="fname" placeholder="Your name" required /></div>
+          <div class="form-group"><label for="femail">Email</label><input type="email" id="femail" placeholder="your@email.com" required /></div>
+          <div class="form-group"><label for="fmessage">Message</label><textarea id="fmessage" rows="5" placeholder="What's on your mind?" required></textarea></div>
+          <button type="submit" class="btn btn--primary btn--full">Send Message 🚀</button>
+          <p class="form__success" id="formSuccess">✅ Message sent! I'll get back to you soon.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; built by <strong>Sumit Sharma</strong></p>
+      <p class="footer__sub">© 2025 · Polytechnic CSE · Ambedkeshwar Group of Institutions</p>
+      <a href="#home" class="back-top">↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
